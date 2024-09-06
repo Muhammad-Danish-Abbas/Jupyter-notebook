@@ -45,19 +45,19 @@ Before starting, ensure that Docker and Visual Studio Code are installed on your
    - Add the following content to the `Dockerfile`:
 
      ```Dockerfile
-     # Use the official Python 3.12 base image
-FROM python:3.12
+     ## Use the official Python 3.12 base image
+       ### FROM python:3.12
 
-# Set the working directory inside the container
+# # # Set the working directory inside the container
 WORKDIR /workspace
 
-# Copy the Jupyter notebook file from the local machine to the working directory in the container
+# ##Copy the Jupyter notebook file from the local machine to the working directory in the container
 COPY python.ipynb .
 
-# Install Jupyter Notebook using pip
+# ## Install Jupyter Notebook using pip
 RUN pip install notebook
 
-# Expose port 8888 to allow access to the Jupyter Notebook from outside the container
+# ## Expose port 8888 to allow access to the Jupyter Notebook from outside the container
 EXPOSE 8888
 
 # Define the default command to run Jupyter Notebook
