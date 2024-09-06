@@ -43,8 +43,8 @@ Before starting, ensure that Docker and Visual Studio Code are installed on your
 2. **Create a Dockerfile**:
    - Inside the `jupyter-docker` folder, create a file named `Dockerfile`.
    - Add the following content to the `Dockerfile`:
-
-     ```Dockerfile
+```
+     ``` Dockerfile
      ## Use the official Python 3.12 base image
        ### FROM python:3.12
 
@@ -69,7 +69,7 @@ CMD [ "jupyter","notebook","--ip=0.0.0.0","--allow-root","--no-browser"]
      ```
 
 ---
-
+```
 ## Step 3: Build and Run the Docker Container
 
 1. **Open a Terminal**:
