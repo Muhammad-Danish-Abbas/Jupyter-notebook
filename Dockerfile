@@ -1,6 +1,6 @@
 FROM python:3.12
 WORKDIR /workspace
-COPY python.ipynb .
+COPY app.ipynb .
 RUN pip install notebook
 
 EXPOSE 8888
